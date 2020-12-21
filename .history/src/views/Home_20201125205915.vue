@@ -1,0 +1,19 @@
+<template>
+  <div class="home">
+    <BannerBox />
+  </div>
+</template>
+
+<script>
+import BannerBox from '../components/BannerBox.vue'
+  export default {
+    name:'Home',
+    components:{
+      BannerBox
+    }
+  }
+</script>
+
+<style lang="less" scoped>
+
+</style>

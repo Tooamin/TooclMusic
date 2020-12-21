@@ -1,0 +1,40 @@
+<template>
+    <div class="rankingitem">
+        <div class="ranking-number">01</div>
+        <div class="ranking-name">
+            <div class="ranking-title">茫</div>
+            <div class="ranking-subtitle">利润其</div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name:'Rankingitem'
+    }
+</script>
+
+<style lang="less" scoped>
+.rankingitem{
+    width: 100%;
+    height: 60px;
+    &::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .ranking-number{
+        float: left;
+        font-size: 16px;
+        // color: #2ddae8;
+        line-height: 60px;
+    }
+    .ranking-title{
+        font-size: 18px;
+    }
+    .ranking-name{
+        float: left;
+        margin: 10px 20px;
+    }
+}
+</style>

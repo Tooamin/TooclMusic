@@ -1,0 +1,68 @@
+.song {
+    box-sizing: border-box;
+    /deep/ .van-nav-bar .van-icon {
+        color: #2b2b2b;
+    }
+
+    /deep/.van-nav-bar__title {
+        color: #2b2b2b;
+    }
+    .player-name{
+        font-size: 16px;
+    }
+    .singer-name{
+        font-size: 12px;
+        /deep/ .van-icon{
+            vertical-align: middle;
+        }
+        margin-left: 5px;
+    }
+    .auto-img{
+        width: 100%;
+        display: block;
+    }
+    .song-imgbox{
+        position: relative;
+    }   
+    .songimg{
+        box-sizing: border-box;
+        width: 240px;
+        height: 240px;
+        border-radius:50%;
+        overflow: hidden;
+        margin: 40px auto;
+        // transform:rotate(0deg);
+        animation: rotating 3s linear infinite;
+    }
+    @keyframes rotating {
+        0%{
+            transform: rotate(-360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+    .img-icon{
+        position: absolute;
+        top: 86px;
+        left: 160px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #f7f7f7;
+    }
+    .range-box{
+        box-sizing: border-box;
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+    .range{
+        box-sizing: border-box;
+        width: 100%;
+        height: 2px;
+        
+    }
+}

@@ -1,0 +1,254 @@
+.song {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    .big-player {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        background-color: #cccccc;
+    }
+
+    box-sizing: border-box;
+
+    /deep/ .van-nav-bar {
+        background-color: transparent;
+    }
+
+    /deep/ .van-nav-bar .van-icon {
+        color: #ffffff;
+    }
+
+    /deep/.van-nav-bar__title {
+        color: #ffffff;
+    }
+
+    .songbg {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        filter: blur(100px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -9;
+    }
+
+    .player-name {
+        font-size: 16px;
+    }
+
+    .singer-name {
+        font-size: 12px;
+
+        /deep/ .van-icon {
+            vertical-align: middle;
+        }
+
+        margin-left: 5px;
+    }
+
+    .auto-img {
+        width: 100%;
+        display: block;
+    }
+
+    .song-imgbox {
+        position: relative;
+    }
+
+    .songimg {
+       width: 300px;
+       border-radius: 10px;
+        // transform:rotate(0deg);
+    }
+
+    .video {
+        display: none;
+    }
+
+    .img-icon {
+        position: absolute;
+        top: 80px;
+        left: 158px;
+        width: 60px;
+        height: 60px;
+        border: 3px solid #2b2b2b;
+        border-radius: 50%;
+        background-color: #f7f7f7;
+    }
+
+    .range-box {
+        box-sizing: border-box;
+        padding: 10px 10px;
+        margin-top: 90;
+
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+
+    .strattiem {
+        float: left;
+        color: #ffffff;
+    }
+
+    .range {
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 76%;
+        height: 2px;
+        background-color: rgba(255, 255, 255, .3);
+        position: relative;
+        transform: translateY(6px);
+
+        /deep/ .van-slider__button {
+            width: 14px;
+            height: 14px;
+            box-shadow: none;
+        }
+
+        /deep/ .van-slider__bar {
+            background-color: #2ddae8;
+
+            &:active {
+                background-color: #2ddae8;
+            }
+        }
+    }
+
+    .endtiem {
+        float: right;
+        color: #ffffff;
+    }
+
+    .play-conponents {
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 20px;
+        display: flex;
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 20px;
+    }
+
+    .model,
+    .upsong,
+    .plyasong,
+    .nextsong,
+    .directory {
+        flex: 1;
+    }
+
+    .model {
+        margin-left: 30px;
+    }
+
+    .popup-title {
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    /deep/ .van-popup--bottom {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .song-name {
+        padding: 20px;
+        font-size: 14px;
+        box-sizing: border-box;
+        .song-name-title{
+            float: left;
+            width: 310px;
+        }
+        /deep/ .van-icon {
+            font-size: 18px;
+            float: right;
+        }
+    }
+
+    .min-player {
+        width: 90%;
+        height: 80px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-sizing: border-box;
+        box-shadow: 0px 5px 10px #ccc;
+        position: relative;
+        padding: 16px;
+        .playsong {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        .min-play-box {
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+
+        .min-play-img {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .min-play-name {
+            float: left;
+            width: 160px;
+            margin-left: 20px;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            /deep/ .van-slider {
+                transform: translateY(30px);
+            }
+
+            /deep/ .van-slider__button {
+                width: 20px;
+                height: 20px;
+            }
+
+            /deep/ .van-slider__bar {
+                background-color: #2ddae8;
+            }
+        }
+
+        .min-play-title {
+            width: 200px;
+            font-size: 14px;
+            text-align: content;
+        }
+
+        .starttime {
+            float: left;
+        }
+
+        .endtime {
+            float: right;
+        }
+    }
+    .player-lyrics{
+        width: 100%;
+        height: 60%;
+    }
+}

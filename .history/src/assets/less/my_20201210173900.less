@@ -1,0 +1,156 @@
+.my{
+    &::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .auto-img{
+        width: 100%;
+        display: block;
+    }
+    .userbg{
+        width: 100%;
+        height: 400px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -9;
+    }
+    .userinfo-box{
+        background-color: rgba(255, 255, 255, .9);
+        float: left;
+        width: 100%;
+        
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+    .userinfo{
+        width: 100%;
+        &::after{
+          content: "";
+          display: block;
+          clear: both;  
+        }
+        position: relative;
+    }
+    .user-img{
+        width:  60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+        margin: 20px;
+        margin-left: 40px;
+    }
+    .usertitle{
+        float: left;
+    }
+    .user-name{
+       
+        margin: 30px 0px 0px 0px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .user-level{
+        text-align: center;
+        width: 40px;
+        height: 20px;
+        background-color: rgba(255, 255, 255);
+        line-height: 20px;
+        border-radius: 20px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    .userinfo-icon{
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        /deep/ .van-icon{
+            font-size: 16px;
+        }
+    }
+    .likemusic{
+        width: 90%;
+        margin: 10px auto;
+        background-color: rgba(255, 255, 255, .9);
+        border-radius: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        box-shadow: 0px 5px 5px #ccc;
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+    .likemusic-img{
+        width: 60px;
+        height: 60px;
+        float: left;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .likemusicname{
+        float: left;
+        margin: 10px 10px;
+    }
+    .likemusic-title{
+        font-size: 16px;
+        color: #2b2b2b;
+    }
+    .likemusic-subtitle{
+        margin-top: 5px;
+        color: #a7a7a7;
+    }
+    .likemusic-icon{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        /deep/ .van-icon{
+            font-size: 16px;
+        }
+    }
+    .createplaylist,.my-collection{
+        width: 90%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, .9);
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px #ccc;
+    }
+    .createplaylist-title{
+        font-size: 16px;
+        margin: 0px 20px;
+        padding: 20px 0px;
+
+        &::after{
+            content: "";
+            display: block;
+            width: 80px;
+            border-bottom: 3px solid #2ddae8;
+            margin-top: 4px;
+        }
+    }
+    .ceateplaylist-box{
+        padding: 10px;
+        box-sizing: border-box;
+        padding-top:0;
+    }
+    .my-collection{
+        margin: 20px auto;
+    }
+    /deep/ .van-button{
+        width: 80%;
+        display: block;
+        margin: 40px;
+        border-radius: 20px;
+    }
+}

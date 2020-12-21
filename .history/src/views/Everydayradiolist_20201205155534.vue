@@ -1,0 +1,24 @@
+<template>
+  <div class="everydayradiolist">
+    <van-nav-bar :border="false" title="24小时榜" left-arrow @click-left="goBack" />
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Everydayradiolist",
+  methods: {
+    goBack() {
+      this.$router.go(-1);
+    },
+  },
+};
+</script>
+
+<style lang="less" scoped>
+.everydayradiolist {
+  /deep/ .van-nav-bar .van-icon {
+    color: #000;
+  }
+}
+</style>

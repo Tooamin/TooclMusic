@@ -1,0 +1,39 @@
+.my{
+    .auto-img{
+        width: 100%;
+        display: block;
+    }
+    .userbg{
+        width: 100%;
+        height: 400px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -9;
+    }
+    .userinfo{
+        background-color: rgba(255, 255, 255, .9);
+        float: left;
+        width: 100%;
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+    .user-img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+        margin: 20px;
+    }
+    .user-name{
+        float: left;
+        margin: 40px 0px;
+    }
+}

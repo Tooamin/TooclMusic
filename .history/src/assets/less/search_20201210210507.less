@@ -1,0 +1,107 @@
+.search {
+  padding-bottom: 120px;
+    .auto-img {
+      width: 100%;
+      display: block;
+    }
+    /deep/ .van-nav-bar .van-icon {
+      color: #2b2b2b;
+    }
+    /deep/.van-nav-bar__title {
+      color: #2b2b2b;
+    }
+    /deep/ .van-search {
+      padding: 0;
+    }
+    .history-contentlist {
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .history-title {
+      margin: 10px;
+      color: #2b2b2b;
+      font-size: 16px;
+    }
+    .clear-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+    .history-item {
+      color: #2b2b2b;
+      float: left;
+      margin: 10px 10px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      background-color: rgb(230, 230, 230);
+      border-radius: 20px;
+    }
+    .hotsearch-title {
+      color: #2b2b2b;
+      font-size: 16px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .hotsearch-box {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 160px;
+      overflow: hidden;
+      position: relative;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      transition: all 0.4s linear;
+    }
+    .hotsearch-item {
+      flex: 1;
+      min-width: 100px;
+      max-width: 140px;
+      margin: 10px 20px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .hotsearch-count {
+      float: left;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  
+    .hotsearch-name {
+      float: left;
+      margin-left: 20px;
+      font-size: 14px;
+      width: 70%;
+    }
+    .spread-btn {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .result-item {
+      padding: 10px 20px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #ccc;
+      font-size: 14px;
+      &:nth-of-type(1) {
+        border-top: 1px solid #ccc;
+      }
+      /deep/ .van-icon {
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }

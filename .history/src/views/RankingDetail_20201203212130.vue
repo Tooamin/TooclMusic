@@ -1,0 +1,42 @@
+<template>
+  <div class="rankingdetail">
+    <van-nav-bar title="排行榜" left-arrow :border="false" @click-left="goBack" />
+
+    <div class="rankingdetailbg">
+
+    </div>
+  </div>
+</template>
+
+<script>
+import "../assets/less/rankingdetail.less";
+export default {
+  name: "RankingDetail",
+  created() {
+    let rankingid = this.$store.state.rankingId;
+    this.rankingId = rankingid;
+  },
+  data() {
+    return {
+        //排行榜id
+        rankingId:''
+
+    };
+  },
+  methods: {
+    //返回上一级
+    goBack() {
+      this.$router.go(-1);
+    },
+    //获取排行榜数据
+    getrankingData() {
+        this.$toast.loading({
+        message: "加载中...",
+        forbidClick: true,
+      });
+
+      
+    },
+  },
+};
+</script>

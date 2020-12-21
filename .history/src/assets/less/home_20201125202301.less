@@ -1,0 +1,40 @@
+.home{
+    background-color: #f8f8f8;
+    img{
+        width: 100%;
+        display: block;
+    }
+    .top-nav{
+       display: flex;
+        position: relative;
+        .left{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            top: 12px;
+            z-index: 9;
+        }
+        .conter{
+            
+            /deep/ .van-tabs__line{
+                width: 60px;
+                height: 2px;
+                background-color:#2ddae8;
+            }
+            /deep/ .van-tab--active{
+                font-size: 16px;
+                color: #2ddae8;
+                font-weight: 700;
+            }
+        }
+        .right{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 0;
+            top: 12px;
+            z-index: 9;
+        }
+    }
+}
